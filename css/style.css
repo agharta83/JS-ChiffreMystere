@@ -1,0 +1,154 @@
+/*** STYLES GENERAUX ***/
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #030a14, #2a3b41, #546e6d, #8da597, #d4dcc1);
+  background-repeat: no-repeat;
+  font-family: 'VT323', monospace;
+  font-size: 1.5em;
+}
+
+.rules {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 1em;
+}
+
+/*** STYLES DES REGLES DU JEU ***/
+.title {
+  text-transform: uppercase;
+  font-size: 2.2em;
+  font-weight: 600;
+  padding-bottom: 0.4em;
+}
+
+.rules > p:nth-child(4) {
+  padding-bottom: 0.8em;
+  border-block-end: medium solid #34EC3A;
+}
+
+/*** STYLES DU FORMULAIRE DE SAISIE ***/
+.form {
+  width: 50%;
+  margin: auto;
+  padding: 0.8em 0;
+  text-align: center;
+  border-block-end: medium solid #34EC3A;
+}
+
+label {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+.playerField {
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color:  #34EC3A;
+  font-family: 'VT323', monospace;
+  font-size: 1em;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+
+.playerField:focus {
+  border: 2px solid red;
+}
+
+.playerSubmit {
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-family: 'VT323', monospace;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+}
+
+.playerSubmit:active {
+  color: black;
+  background-color: white;
+  border: 2px solid red;
+}
+
+/*** STYLES DES RESULTATS DE LA PARTIE EN COURS ***/
+.results {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border-block-end: medium solid #34EC3A;
+  font-size: 1.2em;
+}
+
+.guesses {
+  display: flex;
+  padding-top: 0.5em;
+  justify-content: space-evenly;
+}
+
+.guess {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.lowOrHight {
+  width: 75px;
+  height: 75px;
+  margin: 0.2em auto;
+  font-size: 2.5em;
+  border: 2px solid red;
+  border-radius: 25%;
+  background-color: black;
+  color: red;
+}
+
+/*** STYLES DU TABLEAU DES SCORES ***/
+.scoreBoard {
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.titleScoreBoard {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.board {
+  width: 50%;
+  margin: auto;
+  border: 2px solid red;
+  background-color: black;
+  color: white;
+}
+
+th {
+  padding: 0.5em 0;
+  border-bottom: 2px solid red;
+}
+
+td {
+  padding: 0.2em 0;
+}
+
+td:last-child {
+  padding-bottom: 0.5em;
+}
+
+/*** STYLE DU FOOTER ***/
+footer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 1em 0;
+  color: white;
+  font-size: 0.6em;
+
+}
