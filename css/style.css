@@ -32,9 +32,17 @@ body {
 .form {
   width: 50%;
   margin: auto;
-  padding: 0.8em 0;
   text-align: center;
+  padding: 0.8em 0;
   border-block-end: medium solid #34EC3A;
+}
+
+.form-visible {
+  display: block;
+}
+
+.form-hidden {
+  display: none;
 }
 
 label {
@@ -76,24 +84,65 @@ label {
   border: 2px solid red;
 }
 
+.restart {
+  width: 100px;
+  height: 30px;
+  font-family: 'VT323', monospace;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+}
+
+.restart:active {
+  color: black;
+  background-color: white;
+  border: 2px solid red;
+}
+
 /*** STYLES DES RESULTATS DE LA PARTIE EN COURS ***/
 .results {
   width: 50%;
   margin: auto;
   text-align: center;
-  border-block-end: medium solid #34EC3A;
   font-size: 1.2em;
 }
 
-.guesses {
-  display: flex;
-  padding-top: 0.5em;
-  justify-content: space-evenly;
+.guess.hidden {
+  display: none;
 }
 
 .guess {
-  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  border-block-end: medium solid #34EC3A;
+}
+
+.guesses {
+  width: 100%;
+  margin: auto;
+  font-size: 0.9em;
   font-weight: 600;
+}
+
+.result {
+  display: block;
+  margin: 1em 0;
+  border-block-end: medium solid #34EC3A;
+}
+
+.result.hidden {
+  display: none;
+}
+
+.textResult {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.mysteryNumber {
+  margin: 0.5em;
 }
 
 .lowOrHight {
@@ -114,6 +163,7 @@ label {
   margin: auto;
   text-align: center;
   padding-top: 1em;
+  display: none;
 }
 
 .titleScoreBoard {
@@ -150,5 +200,4 @@ footer {
   padding: 1em 0;
   color: white;
   font-size: 0.6em;
-
 }

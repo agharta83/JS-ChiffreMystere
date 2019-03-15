@@ -11,23 +11,32 @@
 
     <div class="rules">
       <h1 class="title">Chiffre mystère</h1>
-      <p>L'ordinateur a choisi un chiffre aléatoire compris entre 1 et 10.</p>
+      <p>L'ordinateur a choisi un chiffre aléatoire compris entre 1 et 100.</p>
       <p>Essayez de le deviner en un minimum de tours !</p>
       <p>L'ordinateur vous indiquera si votre estimation est trop élevée ou trop basse.</p>
     </div>
 
-    <div class="form">
-      <label for="playerField">Entrer un chiffre :</label>
-      <input type="text" id="playerField" class="playerField">
-      <input type="submit" value="Valider" class="playerSubmit">
-    </div>
+    <form class="form">
+      <div class="form-visible">
+        <label for="playerField">Entrer un chiffre :</label>
+        <input type="text" id="playerField" class="playerField">
+        <input type="submit" value="Valider" class="playerSubmit">
+      </div>
+    </form>
+    
 
     <div class="results">
-      <div class="guesses">
-          <p class="result">Vous avez saisi le chiffre :</p>
-          <p class="guess">5</p>
-      </div>     
-      <p class="lowOrHight">-</p>
+      <div class="guess hidden">
+          <p class="guesses"></p>
+          <p class="lowOrHight"></p>
+      </div>  
+
+      
+
+      <div class="result hidden">
+        <p class="textResult"></p>
+        <p class="mysteryNumber"></p>
+      </div>
     </div>
     
     <div class="scoreBoard">
@@ -69,7 +78,7 @@
       <p>Créer par Agartha dans le cadre d'un projet personnel - &copy; Copyright 2019</p>  
     </footer>
   
-    <!--<script src="../js/jeu.js"></script>-->
+    <script src="../js/jeu.js"></script>
   </body>
 
   
