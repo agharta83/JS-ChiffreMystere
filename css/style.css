@@ -126,6 +126,14 @@ label {
   font-weight: 600;
 }
 
+.results {
+  display: block;
+}
+
+.results.hidden {
+  display: none;
+}
+
 .result {
   display: block;
   margin: 1em 0;
@@ -163,7 +171,6 @@ label {
   margin: auto;
   text-align: center;
   padding-top: 1em;
-  display: none;
 }
 
 .titleScoreBoard {
