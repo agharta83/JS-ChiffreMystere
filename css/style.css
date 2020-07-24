@@ -167,7 +167,7 @@ label {
 /*** STYLES DU TABLEAU DES SCORES ***/
 .scoreBoard {
   width: 50%;
-  height: 500px;
+  min-height: 666px;
   margin: auto;
   text-align: center;
   padding-top: 1em;
